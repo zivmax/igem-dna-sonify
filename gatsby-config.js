@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/igem-dna-sonify",
   siteMetadata: {
     title: `iGEM 2024 DNA Sonify`,
     author: {
