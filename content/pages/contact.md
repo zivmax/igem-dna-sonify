@@ -1,9 +1,9 @@
 ---
-title: 'Contact'
+title: '联系方式'
 template: 'contact-template'
 ---
 
-# Get in Touch.
+# 保持联系
 
-Email: igem.shanghaitech.china@gmail.com
+邮箱: igem.shanghaitech.china@gmail.com
 

@@ -1,5 +1,5 @@
 ---
-title: About
+title: 关于我们
 template: about-template
 profiles:
   - name: ShanghaiTech
@@ -8,4 +8,3 @@ profiles:
     image: /media/ustc.jpg
 ---
 
-# Welcome to our project!

@@ -18,15 +18,15 @@ module.exports = {
     socialLinks: [
       {
         name: "github",
-        url: "https://github.com",
+        url: "https://github.com/zivmax/igem-dna-sonify",
       },
       {
-        name: "twitter",
-        url: "https://twitter.com",
+        name: "ShanghaiTech",
+        url: "https://www.shanghaitech.edu.cn/",
       },
       {
-        name: "instagram",
-        url: "https://instagram.com",
+        name: "USTC",
+        url: "https://ustc.edu.cn/",
       },
     ],
   },

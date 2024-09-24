@@ -7,12 +7,12 @@ import { useStaticQuery, graphql } from "gatsby";
 
 const HEADER_NAV_ITEM = [
   {
-    label: "About",
+    label: "关于我们",
     url: "/about",
     isExternal: false,
   },
   {
-    label: "Contact",
+    label: "联系方式",
     url: "/contact",
     isExternal: false,
   },

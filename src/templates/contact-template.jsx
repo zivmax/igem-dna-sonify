@@ -36,6 +36,7 @@ const Intro = styled.div`
   text-align: center;
 
   & p {
+    padding-top: 30px;
     text-transform: capitalize;
     font-size: var(--size-400);
   }
