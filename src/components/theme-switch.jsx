@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import useDarkMode from "use-dark-mode";
 import styled from "styled-components";

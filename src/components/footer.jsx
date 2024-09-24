@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Container from './container.mjs';
 import styled from 'styled-components';
 import SocialLinks from './social-links';
