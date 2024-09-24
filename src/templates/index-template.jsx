@@ -2,19 +2,14 @@ import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import styled from "styled-components";
+import Seo from "../components/seo";
 import Tags from "../components/tags";
 
 const PostTemplate = ({ data }) => {
-  const { frontmatter, excerpt, html } = data.markdownRemark;
+  const { frontmatter, html } = data.markdownRemark;
 
   return (
-    <Layout
-      title={frontmatter.title}
-      description={frontmatter.description || excerpt}
-      socialImage={
-        frontmatter.social_image ? frontmatter.social_image.absolutePath : ""
-      }
-    >
+    <Layout>
       <PostWrapper>
         <article>
           <PostTitle>{frontmatter.title}</PostTitle>
@@ -27,7 +22,15 @@ const PostTemplate = ({ data }) => {
     </Layout>
   );
 };
-
+export function Head({ data }) {
+  return (
+    <Seo
+      title={data.markdownRemark.frontmatter.title}
+      description={data.markdownRemark.frontmatter.description}
+      socialImage={data.markdownRemark.frontmatter.socialImage}
+    />
+  );
+}
 export default PostTemplate;
 
 const PostWrapper = styled.div`
