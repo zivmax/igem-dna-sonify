@@ -13,5 +13,5 @@ pages:
   artifacts:
     paths:
       - public
-  only:
-    - pages
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "pages"'
