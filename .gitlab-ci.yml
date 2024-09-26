@@ -7,10 +7,9 @@ pages:
   stage: deploy
   script:
     - echo "Downloading ZIP file..."
-    - curl -L -o igem-dna-sonify-pages.zip https://gitlab.igem.org/zivmax/igem-dna-sonify/-/archive/pages/igem-dna-sonify-pages.zip    
-    - unzip igem-dna-sonify-pages.zip
-    - rm igem-dna-sonify-pages.zip
-    - mv igem-dna-sonify-pages/* public/
+    - curl -L -o public.zip https://gitlab.igem.org/zivmax/igem-dna-sonify/-/archive/pages/igem-dna-sonify-pages.zip    
+    - unzip public.zip
+    - rm public.zip
   artifacts:
     paths:
       - public
