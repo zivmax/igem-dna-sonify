@@ -1,17 +1,21 @@
-image: curlimages/curl:latest
+image: node:latest
 
-stages:
-  - deploy
+# This folder is cached between builds
+# https://docs.gitlab.com/ce/ci/yaml/README.html#cache
+cache:
+  paths:
+    - node_modules/
+    # Enables git-lab CI caching. Both .cache and public must be cached, otherwise builds will fail.
+    - .cache/
+    - public/
 
 pages:
   stage: deploy
   script:
-    - echo "Downloading ZIP file..."
-    - curl -L -o igem-dna-sonify-pages.zip https://gitlab.igem.org/zivmax/igem-dna-sonify/-/archive/pages/igem-dna-sonify-pages.zip    
-    - unzip igem-dna-sonify-pages.zip
-    - rm igem-dna-sonify-pages.zip
-    - mkdir public/
-    - mv igem-dna-sonify-pages/* public/
+    - npm install
+    - ./node_modules/.bin/gatsby build
   artifacts:
     paths:
       - public
+  only:
+    - main
