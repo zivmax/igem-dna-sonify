@@ -4,10 +4,10 @@ stages:
 pages:
   stage: build
   script:
-    - mkdir .public
-    - cp -r * .public
+    - mkdir public
+    - cp -r * public
   artifacts:
     paths:
-      - .public
+      - public
   only:
     - pages
