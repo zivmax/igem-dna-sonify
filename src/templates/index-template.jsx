@@ -22,6 +22,7 @@ const PostTemplate = ({ data }) => {
     </Layout>
   );
 };
+
 export function Head({ data }) {
   return (
     <Seo
@@ -31,6 +32,7 @@ export function Head({ data }) {
     />
   );
 }
+
 export default PostTemplate;
 
 const PostWrapper = styled.div`

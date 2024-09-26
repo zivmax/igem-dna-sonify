@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
 import styled from "styled-components";
+import Seo from "../components/seo";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const AboutTemplate = ({ data }) => {
@@ -27,6 +28,16 @@ const AboutTemplate = ({ data }) => {
     </Layout>
   );
 };
+
+export function Head({ data }) {
+  return (
+    <Seo
+      title={data.markdownRemark.frontmatter.title}
+      description={data.markdownRemark.frontmatter.description}
+      socialImage={data.markdownRemark.frontmatter.socialImage}
+    />
+  );
+}
 
 export default AboutTemplate;
 
@@ -77,9 +88,8 @@ const AboutCopy = styled.div`
   }
 `;
 
-
 export const pageQuery = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

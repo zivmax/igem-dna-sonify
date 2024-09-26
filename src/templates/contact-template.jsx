@@ -1,10 +1,11 @@
-import * as React from 'react';
-import { graphql } from 'gatsby';
-import Layout from '../components/layout';
-import PostList from '../components/post-list';
-import styled from 'styled-components';
+import * as React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/layout";
+import PostList from "../components/post-list";
+import Seo from "../components/seo";
+import styled from "styled-components";
 
-const HomePage = ({ data }) => {
+const ContactPage = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
   const intro = data.markdownRemark.html;
   const title = data.markdownRemark.frontmatter.title;
@@ -22,7 +23,17 @@ const HomePage = ({ data }) => {
   );
 };
 
-export default HomePage;
+export function Head({ data }) {
+  return (
+    <Seo
+      title={data.markdownRemark.frontmatter.title}
+      description={data.markdownRemark.frontmatter.description}
+      socialImage={data.markdownRemark.frontmatter.socialImage}
+    />
+  );
+}
+
+export default ContactPage;
 
 const Intro = styled.div`
   display: flex;
@@ -49,36 +60,36 @@ const Intro = styled.div`
 `;
 
 export const pageQuery = graphql`
-  query($slug: String!) {
-  site {
-    siteMetadata {
-      title
-    }
-  }
-  allMarkdownRemark(
-    filter: {fields: {contentType: {eq: "posts"}}}
-    sort: {frontmatter: {date: DESC}}
-    limit: 9
-  ) {
-    nodes {
-      fields {
-        slug
-      }
-      excerpt
-      timeToRead
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        description
+  query ($slug: String!) {
+    site {
+      siteMetadata {
         title
-        tags
+      }
+    }
+    allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "posts" } } }
+      sort: { frontmatter: { date: DESC } }
+      limit: 9
+    ) {
+      nodes {
+        fields {
+          slug
+        }
+        excerpt
+        timeToRead
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          description
+          title
+          tags
+        }
+      }
+    }
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      frontmatter {
+        title
       }
     }
   }
-  markdownRemark(fields: {slug: {eq: $slug}}) {
-    html
-    frontmatter {
-      title
-    }
-  }
-}
 `;
