@@ -8,8 +8,6 @@ cache:
       - pnpm-lock.yaml
   paths:
     # Enables git-lab CI caching. Both .cache and public must be cached, otherwise builds will fail.
-    - .cache/
-    - public/
     - .pnpm-store
 
 before_script:
