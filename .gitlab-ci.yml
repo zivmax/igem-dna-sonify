@@ -9,7 +9,6 @@ pages:
     - echo "Unzipping..."
     - unzip igem-dna-sonify-pages.zip
     - rm igem-dna-sonify-pages.zip
-    - # Assuming the extracted folder is named igem-dna-sonify-pages
     - mv igem-dna-sonify-pages/* public/
   artifacts:
     paths:
