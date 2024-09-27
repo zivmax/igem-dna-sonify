@@ -1,15 +1,5 @@
 image: node:latest
 
-# This folder is cached between builds
-# https://docs.gitlab.com/ce/ci/yaml/README.html#cache
-cache:
-  key:
-    files:
-      - pnpm-lock.yaml
-  paths:
-    # Enables git-lab CI caching. Both .cache and public must be cached, otherwise builds will fail.
-    - .pnpm-store
-
 before_script:
   - corepack enable
   - corepack prepare pnpm@latest-9 --activate
