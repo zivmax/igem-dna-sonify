@@ -27,7 +27,6 @@ export function Head({ data }) {
   return (
     <Seo
       title={data.markdownRemark.frontmatter.title}
-      description={data.markdownRemark.frontmatter.description}
       socialImage={data.markdownRemark.frontmatter.socialImage}
     />
   );
