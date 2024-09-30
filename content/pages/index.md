@@ -3,9 +3,7 @@ template: "index-template"
 title: 听见基因的旋律
 ---
 
-
 ## 1 “听见基因的旋律”活动简介
-
 
 欢迎来到听见基因的旋律网站。在这个网站，我们将将指导您如何将碱基序列转化为音乐以及将音乐与碱基序列匹配。
 
@@ -15,26 +13,58 @@ title: 听见基因的旋律
 
 基因编码生命，乐谱奏响华章，听见基因的旋律，就是倾听自然生灵最深处的诉说，探索生命的跃动。
 
-
 ## 2 碱基——>音乐
+
 您可以遵循这个规则来将您的基因转换为乐曲，来试一试人类建构的音乐原则是否与自然生命的编码心有灵犀吧。
 
 我们将碱基ＡＣＧＴ分别转换为乐器数字接口(MIDI)标准中的音符A4（MIDI 69），C4（MIDI 60），G4（MIDI 67），和G#0（MIDI 20）（Ｔ是字母表中第20个字母），您可以使用我们提供的默认合成器，在每个密码子的起始处（即每隔三个碱基）添加一个过渡的低音鼓点。
 
 为了将碱基序列转化成音乐，首先，您需要下载音乐软件sonic pi与压缩包。之后，将您想要音乐化的碱基序列编辑成类似于gulo.fa的文件，用VScode打开文件dnason，在terminal输入python dnason.py gulo.fa 0 > sonic.txt（python：环境变量；dnason.py：执行的程序，gulo.fa：包含您的碱基序列）并运行后，会得到sonic.txt文件夹。最后，打开sonic pi，在软件中打开sonic.txt文件夹，点击运行，您便能听见基因的旋律。
 
-
-
 ## 音乐——>碱基
 
 我们将通过示范来指导大家如何找到与所选音乐最相似的基因片段。
 
-### 2.2 音乐文件的获得
+### 音乐文件的获得
 
 大家可以从音乐平台直接下载自己喜欢的音乐（mp3文件），当然，我们更鼓励大家用音乐生成AI，如suno （`https://suno.com/`），通过一定的提示词来生成独特风格和主题（甚至与部分基因功能相关的）的音乐，并用此音乐来参与我们的活动。
 
-### 2.2 音乐文件的匹配
+### 音乐文件的匹配
+
 根据国际标准，钢琴从低音到高音依次为
- 
- 
+
 您可以选择一首歌曲（mp3文件），并放入我们程序的文件夹，再运行该程序，此时我们的程序会将C1-7及D1-7全部转化为碱基C（胞嘧啶），将E1-7全部转化为碱基Ｔ（胸腺嘧啶），将F1-7及G1-7全部转化为碱基G（鸟嘌呤），将A1-7及B1-7全部转化为碱基A（腺嘌呤），并将所得到的碱基序列与我们的基因库进行比对，得到相似度最高的基因。之后您可以查看该基因的序列及其所编码的蛋白质以及相关维基百科科普内容。
+
+## 方法
+
+首先，您需要下载音乐软件sonic pi与压缩包。之后，将您想要音乐化的碱基序列编辑成类似于gulo.fa的文件，用VScode打开文件dnason，在terminal输入python dnason.py gulo.fa 0 > sonic.txt（python：环境变量；dnason.py：执行的程序，gulo.fa：包含您的碱基序列）并运行后，会得到sonic.txt文件夹。最后，打开sonic pi，在软件中打开sonic.txt文件夹，点击运行，您便能听见基因的旋律。
+
+![](https://b1z7bm22n7n.feishu.cn/space/api/box/stream/download/asynccode/?code=ODM2N2I0ZDIzNjE0NzYxOGZmZDQwZmYyMDM2ZjAxZDhfOWR4eWJuYXpJamhuZ0tLdmszTkFQWldRN1IxcEFGVkdfVG9rZW46WjczNWJHWHBXb1UwZXh4b1R3WGN2UkRsbmtjXzE3Mjc2OTgxNTY6MTcyNzcwMTc1Nl9WNA)
+
+## 逻辑
+
+将C1-7及D1-7全部转化为碱基C（胞嘧啶），将E1-7全部转化为碱基Ｔ（胸腺嘧啶），将F1-7及G1-7全部转化为碱基G（鸟嘌呤），将A1-7及B1-7全部转化为碱基A（腺嘌呤），并将所得到的碱基序列与我们的基因库进行比对，得到相似度最高的基因。
+
+![](https://b1z7bm22n7n.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjRkN2JjMDA2ZWZjZTYzNjU0N2QyYjVmOTkyN2ZmOGJfQm9BSjE0WUZHRmdFNEtES2ZEcGZoZk9MWVdVWGR4c1lfVG9rZW46Sm9sZGJwUjBNb3hPMVV4VFZzb2M2QjB5bmpnXzE3Mjc2OTgxNTY6MTcyNzcwMTc1Nl9WNA)
+
+![](https://b1z7bm22n7n.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2QyMTNjNTE5ODg5Zjc1NjAwZDBhNDc2ODAyMDk0N2ZfUzVkWE5ad1Y2d0xOWkNEcER1ajhMSGpyRlRvTEZla3dfVG9rZW46SEdMT2JEc0pUb3NtcVB4YnhNcWMxSnJUbmZiXzE3Mjc2OTgxNTY6MTcyNzcwMTc1Nl9WNA)
+
+## 方法
+
+首先您需要获得一份音乐文件（mp3格式）。您可以从音乐软件中下载您喜欢的歌曲。当然，我们更鼓励您用suno ai进行歌曲创作，获得独特风格和主题（甚至是描述某一基因功能）的音乐。
+
+之后，您需要使用我们的程序dnatrans.py,将1.mp3改成您自己的音乐文件名，点击运行之后，程序就会进行转化和匹配程序。
+
+![](https://b1z7bm22n7n.feishu.cn/space/api/box/stream/download/asynccode/?code=YjFjNGE2ZDBhNDdhNGZjZGEyOGI0NTk2ZmQ4Zjk3NGZfOWJMc3BGY1JQeU9oM0daejVVaHhvTlZkYkZNZmhJOGRfVG9rZW46SUhZMmIzOWVBb1N6NHp4Smt5RmNrYzBubjBiXzE3Mjc2OTgxNTY6MTcyNzcwMTc1Nl9WNA)
+
+
+## 示例
+
+```py
+# Example usage
+if name == "-_main__": 
+    mp3 file = "1.mp3"
+    # Change this to your Mp3 file path
+    notes = convert_mp3_to_notes(mp3_file)
+    note-sequence ="".join(notes)
+```
