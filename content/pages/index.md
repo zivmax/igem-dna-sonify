@@ -3,51 +3,57 @@ template: "index-template"
 title: 听见基因的旋律
 ---
 
-## 1 “听见基因的旋律”活动简介
+# 项目简介：
 
-欢迎来到听见基因的旋律网站。在这个网站，我们将将指导您如何将碱基序列转化为音乐以及将音乐与碱基序列匹配。
+音乐是不同音符的排列组合，而基因则是四个碱基（A、T、C、G）的排序。这两者的结构有一定的联系，那么，能否构建基因与音乐的联系，并以音乐这种大家喜闻乐见的艺术形式来进行科普呢？这是我们与中国科学技术大学iGEM队伍一直在思考的问题。最终，我们搭建了一个名为”听见基因的旋律“的网站，构建起了音乐与碱基的双向联系。
 
-在这里，您可以听见基因的旋律，看到旋律下暗藏的生命故事。在生命的宏伟交响曲中，基因则是那乐谱上的音符，以精确的序列排列，决定了生命的节奏与和谐。
+在这里，您可以听见基因的旋律，看到旋律下暗藏的生命故事。在生命的宏伟交响曲中，基因则是那乐谱上的音符，以精确的序列排列，决定了生命的节奏与和谐。想象一下，DNA链如同一卷古老的乐谱，缠绕在生命的指挥棒上。每一个碱基——腺嘌呤与胸腺嘧啶，鸟嘌呤与胞嘧啶——它们是乐谱上跳跃的音符，以双螺旋的形式交织在一起，它们遵循着某种神秘的规律，每一个音符都有其特定的位置和意义。基因编码生命，乐谱奏响华章，听见基因的旋律，就是倾听自然生灵最深处的诉说，探索生命的跃动。啦啦啦啦啦
 
-想象一下，DNA链如同一卷古老的乐谱，缠绕在生命的指挥棒上。每一个碱基——腺嘌呤与胸腺嘧啶，鸟嘌呤与胞嘧啶——它们是乐谱上跳跃的音符，以双螺旋的形式交织在一起，它们遵循着某种神秘的规律，每一个音符都有其特定的位置和意义。
+# 我们的方针是
 
-基因编码生命，乐谱奏响华章，听见基因的旋律，就是倾听自然生灵最深处的诉说，探索生命的跃动。
+## creative
 
-## 2 碱基——>音乐
+我们开创性地建立了基因碱基序列与音乐之间的双向联系，旨在通过音乐这一大家喜闻乐见的艺术形式，向公众普及生物信息学的知识。通过这种创新的方式，我们让复杂的生物信息变得易于理解和亲近。我们还开发了底层程序，使其不仅能够可视化数据，还具备定制化的功能，这样用户可以根据自己的需求调整和优化展示内容。这样的设计不仅展示了DNA与编程之间的密切关系，也强调了编程在生物信息学中的核心地位，从而吸引更多人关注这一领域。
 
-您可以遵循这个规则来将您的基因转换为乐曲，来试一试人类建构的音乐原则是否与自然生命的编码心有灵犀吧。
+## Improvable
 
-我们将碱基ＡＣＧＴ分别转换为乐器数字接口(MIDI)标准中的音符A4（MIDI 69），C4（MIDI 60），G4（MIDI 67），和G#0（MIDI 20）（Ｔ是字母表中第20个字母），您可以使用我们提供的默认合成器，在每个密码子的起始处（即每隔三个碱基）添加一个过渡的低音鼓点。
+在我们的网站中，我们详细分享了参与活动的多种方法，并开源了相关程序，以鼓励更多人参与其中。我们非常重视参与者的反馈，积极收集意见和建议，以便不断改进我们的程序和活动形式。通过定期更新，我们力求提高活动的科普效果，使其更加贴近用户的需求和期待，从而提升整体参与体验。
 
-为了将碱基序列转化成音乐，首先，您需要下载音乐软件sonic pi与压缩包。之后，将您想要音乐化的碱基序列编辑成类似于gulo.fa的文件，用VScode打开文件dnason，在terminal输入python dnason.py gulo.fa 0 > sonic.txt（python：环境变量；dnason.py：执行的程序，gulo.fa：包含您的碱基序列）并运行后，会得到sonic.txt文件夹。最后，打开sonic pi，在软件中打开sonic.txt文件夹，点击运行，您便能听见基因的旋律。
+## Engaging
 
-## 音乐——>碱基
+为了提升活动的参与度，我们充分利用网站的资源，号召全球的生物爱好者和音乐爱好者共同参与。我们的目标是让来自世界各个角落的人们都能感受到基因的旋律，通过音乐的力量将科学知识传播到更广泛的受众中。我们相信，只有通过这样的互动和交流，才能真正激发人们对生物科学的兴趣，进而推动科学知识的普及和深化。
 
-我们将通过示范来指导大家如何找到与所选音乐最相似的基因片段。
+# 基因到音乐
 
-### 音乐文件的获得
+DNA序列可视化在生物信息学中有着相对悠久的历史。即使是将四种碱基表示为字母——A、C、G 和 T，并将双螺旋一条链的序列表示为这些字母的字符串，也是一种简单的可视化方式，并在涉及DNA序列的数据库和出版物中有着悠久的传统。基因组注释的可视化、成对序列比对图和多重比对将可视化进一步扩展，通过添加序列特性的可视化（例如，预测的基因结构或与其他序列的相似性）。
 
-大家可以从音乐平台直接下载自己喜欢的音乐（mp3文件），当然，我们更鼓励大家用音乐生成AI，如suno （`https://suno.com/`），通过一定的提示词来生成独特风格和主题（甚至与部分基因功能相关的）的音乐，并用此音乐来参与我们的活动。
+然而，像任何表示方法一样，可视化也有其局限性。在研究背景下，大量序列的可视化受限于计算机屏幕的大小，通过颜色或符号传达多样信息的能力，以及研究者的注意力。在科学的公众参与背景下，DNA序列具有单调的视觉外观，与此类公众展示或表演中通常期望的“眼花缭乱”不符。
 
-### 音乐文件的匹配
+虽然大量DNA序列的数量和表面上随机的性质在短时间内具有吸引力，但对DNA序列或注释的更详细检查需要的专注水平对于公众临时参与活动或短期活动来说通常是非常高的。因此在公众活动中，整体而言，生物信息学在公众参与活动中还是相对缺乏的。
 
-根据国际标准，钢琴从低音到高音依次为
+我们旨在通过DNA的声化来帮助填补这一空白，在这种方式中，序列的表示是听觉上的而不是视觉上的。由于音乐被广泛理解并用于放松和娱乐，这可能比充满DNA序列或相关数据的屏幕更能吸引公众观众。
 
-您可以选择一首歌曲（mp3文件），并放入我们程序的文件夹，再运行该程序，此时我们的程序会将C1-7及D1-7全部转化为碱基C（胞嘧啶），将E1-7全部转化为碱基Ｔ（胸腺嘧啶），将F1-7及G1-7全部转化为碱基G（鸟嘌呤），将A1-7及B1-7全部转化为碱基A（腺嘌呤），并将所得到的碱基序列与我们的基因库进行比对，得到相似度最高的基因。之后您可以查看该基因的序列及其所编码的蛋白质以及相关维基百科科普内容。
+## 逻辑
+
+通过查找和替换，分别将碱基A、C、G和T转换为音乐标准接口（MIDI）中的A4音符或音符69、C4音符（MIDI 60）、G4音符（MIDI 67）和G#0音符（MIDI 20，选择该音是因为T是字母表中的第20个字母），并使用默认的合成器。在每个密码子（即每三个碱基）开始时添加了经过滤波的低音鼓。
 
 ## 方法
 
 首先，您需要下载音乐软件sonic pi与压缩包。之后，将您想要音乐化的碱基序列编辑成类似于gulo.fa的文件，用VScode打开文件dnason，在terminal输入python dnason.py gulo.fa 0 > sonic.txt（python：环境变量；dnason.py：执行的程序，gulo.fa：包含您的碱基序列）并运行后，会得到sonic.txt文件夹。最后，打开sonic pi，在软件中打开sonic.txt文件夹，点击运行，您便能听见基因的旋律。
 
-![](https://b1z7bm22n7n.feishu.cn/space/api/box/stream/download/asynccode/?code=ODM2N2I0ZDIzNjE0NzYxOGZmZDQwZmYyMDM2ZjAxZDhfOWR4eWJuYXpJamhuZ0tLdmszTkFQWldRN1IxcEFGVkdfVG9rZW46WjczNWJHWHBXb1UwZXh4b1R3WGN2UkRsbmtjXzE3Mjc2OTgxNTY6MTcyNzcwMTc1Nl9WNA)
+![](https://static.igem.wiki/teams/5174/contents/edu/melody/platform.png)
+
+# 音乐到碱基
+
+之后，我们开始思考，能否让音乐与基因匹配？在头脑风暴的过程中，我们认为，仅仅通过某种映射关系使音乐转化为碱基序列是缺少现实意义与科普意义的，因为结果通常不对应现实中某一真实存在的基因序列。因此，我们决定通过特定的映射关系，将音乐与现有基因的碱基序列匹配，并科普该基因的相关信息。
 
 ## 逻辑
 
 将C1-7及D1-7全部转化为碱基C（胞嘧啶），将E1-7全部转化为碱基Ｔ（胸腺嘧啶），将F1-7及G1-7全部转化为碱基G（鸟嘌呤），将A1-7及B1-7全部转化为碱基A（腺嘌呤），并将所得到的碱基序列与我们的基因库进行比对，得到相似度最高的基因。
 
-![](https://b1z7bm22n7n.feishu.cn/space/api/box/stream/download/asynccode/?code=ZjRkN2JjMDA2ZWZjZTYzNjU0N2QyYjVmOTkyN2ZmOGJfQm9BSjE0WUZHRmdFNEtES2ZEcGZoZk9MWVdVWGR4c1lfVG9rZW46Sm9sZGJwUjBNb3hPMVV4VFZzb2M2QjB5bmpnXzE3Mjc2OTgxNTY6MTcyNzcwMTc1Nl9WNA)
+![](https://static.igem.wiki/teams/5174/contents/edu/melody/tone-1.png)
 
-![](https://b1z7bm22n7n.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2QyMTNjNTE5ODg5Zjc1NjAwZDBhNDc2ODAyMDk0N2ZfUzVkWE5ad1Y2d0xOWkNEcER1ajhMSGpyRlRvTEZla3dfVG9rZW46SEdMT2JEc0pUb3NtcVB4YnhNcWMxSnJUbmZiXzE3Mjc2OTgxNTY6MTcyNzcwMTc1Nl9WNA)
+![](https://static.igem.wiki/teams/5174/contents/edu/melody/tone-2.png)
 
 ## 方法
 
@@ -55,16 +61,12 @@ title: 听见基因的旋律
 
 之后，您需要使用我们的程序dnatrans.py,将1.mp3改成您自己的音乐文件名，点击运行之后，程序就会进行转化和匹配程序。
 
-![](https://b1z7bm22n7n.feishu.cn/space/api/box/stream/download/asynccode/?code=YjFjNGE2ZDBhNDdhNGZjZGEyOGI0NTk2ZmQ4Zjk3NGZfOWJMc3BGY1JQeU9oM0daejVVaHhvTlZkYkZNZmhJOGRfVG9rZW46SUhZMmIzOWVBb1N6NHp4Smt5RmNrYzBubjBiXzE3Mjc2OTgxNTY6MTcyNzcwMTc1Nl9WNA)
-
-
 ## 示例
 
 ```py
 # Example usage
-if name == "-_main__": 
-    mp3 file = "1.mp3"
-    # Change this to your Mp3 file path
-    notes = convert_mp3_to_notes(mp3_file)
-    note-sequence ="".join(notes)
+if __name__=="__main__":
+	mp3_file = "1.mp3" #Change this to your MP3 file path
+	notes = convert_mp3_to_notes(mp3_file)
+	note_sequence = "".join(notes)
 ```
